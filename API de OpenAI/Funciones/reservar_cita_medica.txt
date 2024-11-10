@@ -1,0 +1,74 @@
+{
+  "name": "reservar_cita_medica",
+  "description": "Reservar una cita médica",
+  "strict": false,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "El identificador único de la cita"
+      },
+      "fecha": {
+        "type": "string",
+        "description": "La fecha preferida para la cita, por ejemplo: 2024-05-10"
+      },
+      "hora_inicio": {
+        "type": "string",
+        "description": "La hora de inicio de la cita, por ejemplo: 10:00, 14:00, 15:30"
+      },
+      "hora_fin": {
+        "type": "string",
+        "description": "La hora de fin de la cita, por ejemplo: 10:30, 14:30, 16:00"
+      },
+      "nombre_paciente": {
+        "type": "string",
+        "description": "El nombre del paciente"
+      },
+      "documento_nacional": {
+        "type": "string",
+        "description": "El número del Documento Nacional de Identidad (DNI) del paciente, debe tener 8 dígitos"
+      },
+      "carne_extranjeria": {
+        "type": "string",
+        "description": "El número del Carné de Extranjería del paciente, debe tener 9 dígitos"
+      },
+      "especialidad": {
+        "type": "string",
+        "description": "La especialidad médica, por ejemplo: Cardiología, Dermatología"
+      },
+      "id_especialidad": {
+        "type": "string",
+        "description": "El ID de la especialidad médica, por ejemplo: 123, 456"
+      },
+      "contador_cambios": {
+        "type": "string",
+        "description": "Contador de cuántas veces se ha modificado la información de la cita",
+        "default": 0
+      },
+      "doctor": {
+        "type": "string",
+        "description": "El nombre del doctor"
+      },
+      "estado": {
+        "type": "string",
+        "description": "El estado de la cita, por ejemplo: Reservado, Cancelado",
+        "default": "Reservado"
+      }
+    },
+    "required": [
+      "id",
+      "fecha",
+      "hora_inicio",
+      "hora_fin",
+      "nombre_paciente",
+      "documento_nacional",
+      "carne_extranjeria",
+      "especialidad",
+      "id_especialidad",
+      "doctor",
+      "estado",
+      "contador_cambios"
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "name": "encuesta_cita_medica",
+  "description": "Encuesta para evaluar la experiencia con el chatbot multilingüe en WhatsApp para la gestión de citas médicas",
+  "strict": false,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "El identificador único de la cita médica"
+      },
+      "id_especialidad": {
+        "type": "string",
+        "description": "El ID de la especialidad médica"
+      },
+      "especialidad": {
+        "type": "string",
+        "description": "La especialidad médica de la cita, por ejemplo: Cardiología, Dermatología"
+      },
+      "facilidad_uso": {
+        "type": "integer",
+        "description": "Evaluación de la facilidad de uso del chatbot, en una escala del 1 al 5",
+        "minimum": 1,
+        "maximum": 5
+      },
+      "claridad_respuestas": {
+        "type": "integer",
+        "description": "Evaluación de la claridad de las respuestas del chatbot, en una escala del 1 al 5",
+        "minimum": 1,
+        "maximum": 5
+      },
+      "rapidez_respuestas": {
+        "type": "integer",
+        "description": "Evaluación de la rapidez de las respuestas del chatbot, en una escala del 1 al 5",
+        "minimum": 1,
+        "maximum": 5
+      },
+      "satisfaccion_general": {
+        "type": "integer",
+        "description": "Nivel de satisfacción general con la interacción, en una escala del 1 al 5",
+        "minimum": 1,
+        "maximum": 5
+      },
+      "disponibilidad_idiomas": {
+        "type": "integer",
+        "description": "Evaluación de la disponibilidad y calidad del soporte en diferentes idiomas, en una escala del 1 al 5",
+        "minimum": 1,
+        "maximum": 5
+      },
+      "recomendaria_servicio": {
+        "type": "boolean",
+        "description": "Si recomendaría el uso del chatbot a otros"
+      },
+      "comentarios_adicionales": {
+        "type": "string",
+        "description": "Cualquier comentario adicional sobre la experiencia con el chatbot"
+      }
+    },
+    "required": [
+      "id",
+      "id_especialidad",
+      "especialidad",
+      "facilidad_uso",
+      "claridad_respuestas",
+      "rapidez_respuestas",
+      "satisfaccion_general",
+      "disponibilidad_idiomas",
+      "recomendaria_servicio"
+    ]
+  }
+}

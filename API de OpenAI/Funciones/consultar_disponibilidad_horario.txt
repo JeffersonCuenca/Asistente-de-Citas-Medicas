@@ -1,0 +1,27 @@
+{
+  "name": "consultar_disponibilidad_horario",
+  "description": "Consultar disponibilidad de hora para una fecha en específico",
+  "strict": false,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "fecha": {
+        "type": "string",
+        "description": "La fecha preferida para la cita, por ejemplo: 2024-09-24"
+      },
+      "especialidad": {
+        "type": "string",
+        "description": "La especialidad médica, por ejemplo: Cardiología, Dermatología"
+      },
+      "id_especialidad": {
+        "type": "string",
+        "description": "El ID de la especialidad médica, por ejemplo: 123, 456"
+      }
+    },
+    "required": [
+      "fecha",
+      "id_especialidad",
+      "especialidad"
+    ]
+  }
+}
