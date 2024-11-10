@@ -1,0 +1,37 @@
+{
+  "name": "consultar_cita_existente",
+  "description": "Consultar una cita médica existente",
+  "strict": false,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "El identificador único de la cita"
+      },
+      "especialidad": {
+        "type": "string",
+        "description": "El nombre de la especialidad médica, por ejemplo: Cardiología, Dermatología"
+      },
+      "id_especialidad": {
+        "type": "string",
+        "description": "El ID de la especialidad médica, por ejemplo: 123, 456"
+      },
+      "documento_nacional": {
+        "type": "string",
+        "description": "El número del Documento Nacional de Identidad (DNI) del paciente, debe tener 8 dígitos"
+      },
+      "carne_extranjeria": {
+        "type": "string",
+        "description": "El número del Carné de Extranjería del paciente, debe tener 9 dígitos"
+      }
+    },
+    "required": [
+      "id",
+      "especialidad",
+      "id_especialidad",
+      "documento_nacional",
+      "carne_extranjeria"
+    ]
+  }
+}
